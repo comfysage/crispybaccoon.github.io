@@ -1,0 +1,75 @@
+:root {
+  --header_height: 60px;
+
+  --bg0_hard    : #253137;
+  --bg0         : #141b1f;
+  --bg0_soft    : #1d262b;
+  --bg1         : #343E44;
+  --bg2         : #3D474D;
+  --bg3         : #475258;
+  --bg4         : #4F5A5E;
+  --bg5         : #566363;
+  --fg          : #D3C6AA;
+  --red         : #E67E80;
+  --orange      : #E69875;
+  --yellow      : #DBBC7F;
+  --green       : #A7C080;
+  --aqua        : #83C092;
+  --blue        : #7FBBB3;
+  --purple      : #D699B6;
+  --grey0       : #7A8478;
+  --grey1       : #859289;
+  --grey2       : #9DA9A0;
+
+  --fg-neutral-0: var(--fg);
+  --fg-neutral-1: var(--grey0);
+  --fg-neutral-2: var(--grey1);
+
+  --bg-neutral-0_hard: var(--bg0_hard);
+  --bg-neutral-0: var(--bg0);
+  --bg-neutral-0_soft: var(--bg0_soft);
+  --bg-neutral-1: var(--bg0_soft);
+  --bg-neutral-2: var(--bg0_hard);
+  --bg-neutral-3: var(--bg1);
+  --bg-neutral-4: var(--bg2);
+  --bg-neutral-3: var(--bg3);
+
+  /* --fg-neutral-0: #e9e9d8; */
+  /* --fg-neutral-1: #f4f4ec; */
+  /* --fg-neutral-2: #f0f0e5; */
+
+  /* --bg-neutral-0_hard: #2a2a38; */
+  /* --bg-neutral-0: #17171f; */
+  /* --bg-neutral-0_soft: #1c1d34; */
+  /* --bg-neutral-1: #353547; */
+  /* --bg-neutral-2: #414257; */
+  /* --bg-neutral-3: #4b4c66; */
+
+  --sakura-0: #fbe3e5;
+  --sakura-1: #e6a1aa;
+  --sakura-2: #cc8f98;
+
+  --sage-0: #ebe7f4;
+  --sage-1: #c4cee1;
+  --sage-2: #aeb8d1;
+
+  --sukai-0: #e7edf1;
+  --sukai-1: #badaea;
+  --sukai-2: #a2c3d2;
+
+  --shinme-0: #d7e7d1;
+  --shinme-1: #b8e3b3;
+  --shinme-2: #acd2b1;
+
+  --sakaeru-0: #f4f3e3;
+  --sakaeru-1: #ebe1a9;
+  --sakaeru-2: #d8d2a7;
+
+  --seiun-0: #fbe3f4;
+  --seiun-1: #e6aedd;
+  --seiun-2: #d0a7d6;
+
+  --ike-0: #e8f3eb;
+  --ike-1: #b4e1c9;
+  --ike-2: #a2cdbc;
+}

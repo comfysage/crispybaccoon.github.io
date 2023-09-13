@@ -1,0 +1,17 @@
+.font-header {
+  font-size: 36px;
+}
+.font-accent {
+  font-size: 22px;
+}
+.font-text {
+  font-size: 16px;
+}
+
+h1 {
+  margin-block-end: 12px;
+}
+
+p {
+  line-height: 1.2rem;
+}

@@ -1,0 +1,28 @@
+#header {
+  display: flex;
+  flex-direction: row;
+  height: var(--header_height);
+  justify-content: space-between;
+
+  width: min(1200px, 80%);
+  margin-inline: auto;
+
+  & .namecard {
+    & svg {
+      align-self: center;
+      fill: var(--fg-neutral-0);
+    }
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    & .user-page-link {
+      align-self: center;
+    }
+  }
+  & .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}

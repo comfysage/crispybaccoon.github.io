@@ -1,0 +1,25 @@
+button {
+  color: var(--bg-neutral-0);
+  background-color: var(--fg-neutral-0);
+
+  border-radius: 4px;
+
+  padding-block: 5px;
+  padding-inline: 10px;
+
+  cursor: pointer;
+}
+
+.action-button {
+  background-color: var(--seiun-1);
+}
+.accent-button {
+  color: var(--fg-neutral-0);
+  background-color: transparent;
+
+  box-sizing: border-box;
+  border: 2px solid var(--fg-neutral-0);
+}
+.info-button {
+  background-color: var(--ike-1);
+}

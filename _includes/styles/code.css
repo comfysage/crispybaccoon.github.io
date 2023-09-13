@@ -1,0 +1,6 @@
+pre {
+  margin-block: 1.2rem;
+  & code {
+    border-radius: 10px;
+  }
+}
