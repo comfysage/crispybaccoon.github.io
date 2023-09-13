@@ -4,6 +4,13 @@ on:
   push:
     branches: [ mega ]
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 permissions:
   contents: read
   pages: write
@@ -11,6 +18,9 @@ permissions:
 
 jobs:
   build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +33,8 @@ jobs:
           deno-version: v1.x
 
       - name: Build site
-        run: deno task build
+        run: |
+          deno task build --location=https://crispybaccoon.github.io/
       
       - name: Setup Pages
         uses: actions/configure-pages@v2
