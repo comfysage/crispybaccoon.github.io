@@ -1,7 +1,8 @@
 @import "_css/code.css";
-@import "./variables.css";
-@import "./reset.css";
-@import "./text.css";
-@import "./links.css";
-@import "./buttons.css";
-@import "./code.css";
+@import "styles/variables.css";
+@import "styles/fonts.css";
+@import "styles/reset.css";
+@import "styles/text.css";
+@import "styles/links.css";
+@import "styles/buttons.css";
+@import "styles/code.css";

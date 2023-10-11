@@ -1,0 +1,11 @@
+layout: layouts/docs.vto
+main_menu: docs
+docs_menu:
+  - title: Overview
+    id: overview
+  - title: Configuration
+    id: configuration
+  - title: Getting started
+    id: getting-started
+  - title: Creating packages
+    id: creating-packages

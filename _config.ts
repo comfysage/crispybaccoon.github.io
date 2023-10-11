@@ -1,14 +1,34 @@
 import lume from "lume/mod.ts";
 import postcss from "lume/plugins/postcss.ts";
+import vento from "lume/plugins/vento.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
+import toc from "https://deno.land/x/lume_markdown_plugins@v0.1.0/toc/mod.ts";
 
-const site = lume();
+const site = lume(
+  {
+    location: new URL("https://crispybaccoon.github.io"),
+  },
+  {
+    markdown: {
+      plugins: [toc],
+    },
+    search: {
+      returnPageData: true,
+    }
+  }
+);
 
-site.copy("_static");
+site.ignore(".github");
+
+site.copy("_static", ".");
+
+site.copy("_includes/styles/variables.css", "/_static/css/variables.css")
 
 site.use(postcss({
   includes: "_includes",
 }));
+
+site.use(vento(/* Options */));
 
 // import your favorite language
 import lang_javascript from "npm:highlight.js/lib/languages/javascript";

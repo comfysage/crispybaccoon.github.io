@@ -1,0 +1,7 @@
+metas:
+  title: =title
+  description: =description
+  image: /avatar.jpg
+  color: "#141b1f"
+  icon: /apple-touch-icon.png
+  generator: true

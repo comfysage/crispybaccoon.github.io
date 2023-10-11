@@ -1,8 +1,9 @@
 button {
-  color: var(--bg-neutral-0);
-  background-color: var(--fg-neutral-0);
+  color: var(--color-background-0);
+  background-color: var(--color-foreground-0);
 
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
+  border-color: transparent;
 
   padding-block: 5px;
   padding-inline: 10px;
@@ -11,15 +12,19 @@ button {
 }
 
 .action-button {
-  background-color: var(--seiun-1);
+  background-color: var(--purple);
 }
 .accent-button {
-  color: var(--fg-neutral-0);
+  color: var(--color-foreground-0);
   background-color: transparent;
 
   box-sizing: border-box;
-  border: 2px solid var(--fg-neutral-0);
+  border: 2px solid var(--color-foreground-0);
 }
 .info-button {
-  background-color: var(--ike-1);
+  background-color: var(--aqua);
+
+  & a {
+    color: var(--color-background-0);
+  }
 }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>{{ title }}</title>
+    <link rel="icon" href="/_static/favicon.png" />
+    <style>
+      body {
+        background-color: var(--bg-neutral-0);
+      }
+    </style>
+    <link rel="stylesheet" href="/styles/initial.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    {{ if it.page_css }}
+      <link rel="stylesheet" href="/styles/pages/{{ page_css }}">
+    {{ /if }}
+  </head>
+  <body>
+    {{ include "templates/navbar.vto" }}
+    <div id="main" style="">
+      {{ content }}
+    </div>
+  </body>
+</html>

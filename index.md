@@ -1,5 +1,6 @@
 ---
-layout: layout.njk
+title: CrispyBaccoon
+layout: layouts/base.vto
 templateEngine: [njk, md]
 ---
 
@@ -16,7 +17,11 @@ templateEngine: [njk, md]
   ```
 
 </section>
-<section id="section-hayashi"><h2><a id="hayashi">hayashi</a></h2></section>
+<section id="section-hayashi"><h2><a id="hayashi">hayashi</a></h2>
+    <button class="info-button">
+      <a href="/hayashi">More info >>></a>
+    </button>
+</section>
 <section id="section-aki"><h2><a id="aki">aki</a></h2></section>
 <section id="section-dotfiles">
   <h2><a id="dotfiles">dotfiles</a></h2>
@@ -25,7 +30,8 @@ templateEngine: [njk, md]
 <style>
   #main {
     & section {
-      height: calc(60vh);
+      height: 60vh;
+      width: 80vh;
     }
   }
 </style>

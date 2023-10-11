@@ -33,9 +33,18 @@ body {
 }
 
 body {
-  color: var(--fg-neutral-0);
-  background-color: var(--bg-neutral-0);
+  color: var(--color-foreground-0);
+  background-color: var(--color-background-0);
   transition: color 0.3s, background-color 0.3s;
+}
+
+nav + #main {
+  padding-top: var(--navbar_height);
+  display: block;
+}
+
+#main {
+  width: 100%;
 }
 
 main {
